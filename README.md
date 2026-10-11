@@ -8,8 +8,8 @@ Based on RPCSN implementation, but in C++. If anyone wonders why Qt, it's becaus
 
 | Requirement | Notes                                                         |
 |-------------|---------------------------------------------------------------|
-| CMake | >= 3.16                                                       |
-| C++ compiler | C++17 capable. Clang 19, GCC, or MSVC 2022 / clang-cl         |
+| CMake | >= 3.16.4                                                     |
+| C/C++ compiler | C++17 capable. Clang 19, GCC, or MSVC 2022 / clang-cl       |
 | Ninja | Recommended generator.                                        |
 | Qt6 | Components: **Core, Network, Sql, Concurrent, HttpServer**.   |
 | Git | Needed to fetch the external submodules                       |
@@ -19,7 +19,10 @@ database layer.
 
 ### 1. Clone with submodules
 
-The `externals/protobuf` and `externals/abseil-cpp` submodules are required.
+The `externals/protobuf`, `externals/abseil-cpp` and `externals/libressl`
+submodules are required. CMake builds the pinned LibreSSL crypto library
+statically with shadNet; no separate OpenSSL development package or crypto
+runtime DLL is needed.
 
 ```bash
 git clone --recursive https://github.com/shadps4-emu/shadNet.git
