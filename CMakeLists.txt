@@ -88,6 +88,10 @@ set(SOURCES
     src/webapi/webapi_routes_identity.h
     src/webapi/webapi_routes_identity.cpp
     src/webapi/webapi_routes_common.h
+    src/webapi/webapi_routes_npauth.h
+    src/webapi/webapi_routes_npauth.cpp
+    src/npauth.h
+    src/npauth.cpp
     # Read-only stats HTTP/JSON listener
     src/stats_server.h
     src/stats_server.cpp

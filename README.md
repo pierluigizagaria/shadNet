@@ -49,6 +49,9 @@ export QTDIR="$HOME/Qt/<version>/gcc_64"
 `QTDIR`/`CMAKE_PREFIX_PATH` to the Qt kit directory, for example
 `C:\Qt\<version>\msvc2022_64`.
 
+Optional third-party ID-token issuance is configured separately; see
+[NPAuth configuration and verification](documentation/NPAuth.md).
+
 ### 3. Configure & build
 
 **Linux:**
